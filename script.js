@@ -1,28 +1,25 @@
 /*
-Function() constructor
-
-  * expressão new
-  * criar um novo objeto
-  * this keyword
+    Manipulando Arrays
+    
+    Adcionar um item no fim
+    Adicionar no começo
+    Remover do fim
+    Remover do começo
+    Pegar somente alguns elementos do array
+    Remover 1 ou mais itens em qualquer posição do array
+    Encontrar a posiçao de um elemento no array
 */
 
-function Person(name) {
-  this.name = name
-  this.walk = function () {
-    return this.name + " está andando"
-  }
-}
-const wiris = new Person("Wiris")
-const mayk = new Person("Mayk")
-const joao = new Person("João")
-console.log(wiris.walk())
-console.log(mayk.walk())
-console.log(joao.walk())
+let techs = ["html", "css", "js"]
+
+techs.push("nodejs") //Adcionar um item no fim
+techs.unshift("sql") //Adicionar no começo
+techs.pop()           //Remover do fim
+techs.shift()         //Remover do começo
+console.log(techs .slice(1, 3)) //Pegar somente alguns elementos do array
+techs.splice(1, 2)    //Remover 1 ou mais itens em qualquer posição do array
+let index = techs.indexOf('css') //Encontrar a posiçao de um elemento no array
+techs.splice(index, 1)  //Remove o item que foi buscado
 
 
-
-let nome = new String("Wiris")
-console.log(nome)
-
-let date = new Date("2021-02-06")
-console.log(date)
+console.log(techs)

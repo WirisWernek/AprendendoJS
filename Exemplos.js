@@ -196,3 +196,128 @@ function Person(name) {
   
   let date = new Date("2021-02-06")
   console.log(date)
+
+  /*
+  Prototype
+  prototype-based language
+  prototype chain 
+  __proto__
+*/
+
+ /*
+    Type conversion (typecasting) vs Type coersion
+    Altera um tipo de dado para outro
+*/
+
+/*
+   Manipulando Strings e Números 
+   Transformar strings em números e numeros em strings
+*/
+
+let string = "123"
+console.log(Number(string))
+let number = 321
+console.log(String(number))
+
+
+/*
+    Manipulando Strings e Números 
+    Contar quantos caracteres tem em uma palavra e quantos digitos tem um número
+  
+*/
+
+let word ="paralelepipedo"
+console.log(word.length)
+
+let number = 5945
+console.log(String(number).length)
+
+/*
+    Manipulando Números 
+    Transformando um número quebrado com 2 casas decimais e trocando ponto por vírgula
+  
+*/
+let number = 333.455456344747458
+console.log(number.toFixed(2).replace("." , ","))
+
+/*
+    Manipulando Strings 
+    Transformando letras maiúsculas em minúsculas e vice-versa
+  
+*/
+let word ="Programar é muito bacana"
+console.log(word.toUpperCase())           //Transforma em maíscula
+console.log(word.toLocaleLowerCase())     //Transforma em minúscula
+
+/*
+    Manipulando Strings
+    Verificar se o texto tem uma palavra específica
+*/
+
+let phrase = "Eu quero amor!"
+console.log(phrase.includes("amor"))   //return true
+
+let string = "Eu quero Viver!"
+console.log(string.includes("amor"))   //return false
+
+
+/*
+    Manipulando Strings e Arrays
+    Separe um texto que contem espaços, em um novo aray onde cada texto é uma posição do array. Depois disso transforme o array em um texto e onde eram espaços, coloque _
+*/
+
+let phrase = "Eu quero viver o amor!"
+let myarray = phrase.split(" ")          //retira os espaços em branco
+console.log(myarray)
+
+let phraseWithUnderscore = myarray.join("_")   //usa como separador o _
+console.log(phraseWithUnderscore)
+
+/*
+    Manipulando Arrays
+    Criar um Array com costrutor
+*/
+let myarray = ['a', 'b', 'c']           //forma convecional
+let myArray = new Array('a', 'b', 'c')  //forma com construtor
+console.log(myarray)
+console.log(myArray)
+
+/*
+    Manipulando Arrays
+    Contar elementos de um array
+*/
+console.log(['a','b','c'].length)
+
+/*
+    Manipulando Arrays
+    Transformar uma cadeia de caracteres em elementos de um array
+*/
+
+let word = "manipulação"
+console.log(Array.from(word))
+
+/*
+    Manipulando Arrays
+    
+    Adcionar um item no fim
+    Adicionar no começo
+    Remover do fim
+    Remover do começo
+    Pegar somente alguns elementos do array
+    Remover 1 ou mais itens em qualquer posição do array
+    Encontrar a posiçao de um elemento no array
+*/
+
+let techs = ["html", "css", "js"]
+
+techs.push("nodejs") //Adcionar um item no fim
+techs.unshift("sql") //Adicionar no começo
+techs.pop()           //Remover do fim
+techs.shift()         //Remover do começo
+console.log(techs .slice(1, 3)) //Pegar somente alguns elementos do array
+techs.splice(1, 2)    //Remover 1 ou mais itens em qualquer posição do array
+let index = techs.indexOf('css') //Encontrar a posiçao de um elemento no array
+techs.splice(index, 1)  //Remove o item que foi buscado
+
+
+console.log(techs)
