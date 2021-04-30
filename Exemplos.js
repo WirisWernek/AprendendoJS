@@ -321,3 +321,211 @@ techs.splice(index, 1)  //Remove o item que foi buscado
 
 
 console.log(techs)
+
+
+
+
+// Grouping operator ()
+
+let total = 2 + 3 *5
+console.log(total)
+
+let total = (2 + 3) *5
+console.log(total)
+
+
+
+//Operadores de Comparação
+
+// Irá comparar valores e retornar um boolean como resposta á comparação
+
+let one = 1
+let two = 2
+
+//  == igual a
+console.log(two ==1)
+console.log(one =="1")
+
+// . != diferente de 
+console.log(one != two) 
+console.log(one != 1)
+console.log(one != "1")
+
+
+//  === estritamente igual a
+console.log(one ===1)
+console.log(one ==="1")
+
+// . !== estritamente diferente de
+console.log(two !== "2")
+console.log(two !== 2)
+
+let one = 1
+let two = 2
+
+// > maior que
+console.log(one > two)
+
+// >= maior ou igual a
+console.log(one >=1) 
+console.log(two >=1)
+
+// < menor que
+console.log(one < two)
+
+// <= menor igual a
+console.log(one <= two)
+console.log(one <=1)
+console.log(one <=0)
+
+
+
+//Operadores de Atribuição
+let x
+
+console.log(x)
+
+// assgnment
+// x = 1
+
+// additional assignment
+// x += 2
+
+// subtraction assignment
+// x -= 1
+
+// multiplication assignment
+// x *= 2
+
+// division assignment 
+// x /= 2
+
+// remainder, exponetiation
+// x %=2
+// x **=2
+
+
+
+// Operadores Lógicos 
+
+// - 2 valores booleanos, qunado verficados, resultara em verdadeiro ou falso
+
+let pao = true
+let queijo = false
+
+// and &&
+
+console.log(pao && queijo)
+
+// or ||
+
+console.log(pao || queijo)
+
+// not !
+
+console.log(!queijo)
+
+
+
+
+//Operator Condicional
+
+// Dependendo da condição recebemos valor verdadeiro
+
+//Condição então entre valor 1 se não valor 2
+//condition ? value1 : value2
+
+// Exemplos
+// Cafe da manha top
+
+let pao = true
+let queijo = true
+
+const nice = pao && queijo ? 'Café top' : 'Café ruim'
+console.log(nice)
+
+// maior de 18
+
+let age =16
+
+const canDrive = age >=18 ? "can drive" : "can't drive"
+console.log(canDrive)
+
+
+
+// Operadro de strings (string operator)
+
+// comparison(comparação)
+console.log('a' == 'a')
+
+//concatenation (concatenação)
+//retorna a uniao de duas strings
+let alpha = 'alpha'
+
+console.log(alpha + 'bet' + 's')
+
+console.log(alpha + 53)
+
+alpha += 'bets'
+console.log(alpha)
+
+
+
+// type conversion (typecasting) vs Type coersion
+
+
+
+// Falsy 
+//Quando um valor é considerado false em contextos onde um booleano é obrigado (condicionais e loops)
+
+//false
+// -0
+// ""
+// null
+// undefined
+// NaN
+
+console.log( true ? 'verdadeiro' : 'false')
+console.log( -0 ? 'verdadeiro' : 'false')
+
+//Truthy
+// Quando um valor é considerado true em contextos onde um booleano é obrigatório
+
+// true
+// {}
+// []
+// 1
+// 3.23
+// "0"
+// "false"
+// -1
+// Infinity
+// -Infinity
+
+console.log( true ? 'verdadeiro' : 'false')
+console.log( {} ? 'verdadeiro' : 'false')
+
+
+
+
+
+/*
+    Operator precedence
+    Precedencia de operadore
+
+°grouping                        ()
+°negação e incremento            ! ++ --
+°multiplicação e divisão         * /
+°adiçao e subtração              + -
+°relacional                      < <= > >=
+°igualdade                      == != === !==
+°AND                             &&
+°OR                              ||
+°condicional                     ? :
+°assignment(atribuição)          = += -= *=
+*/
+
+console.log(2 + 5 * 10)
+console.log((2 + 5) * 10)
+console.log(3 > 2 > 1)
+console.log(3 >  && 2 > 1)
