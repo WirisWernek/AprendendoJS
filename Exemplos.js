@@ -583,3 +583,73 @@ switch ((number1, number2, operator)) {
 }
 
 console.log(result);
+
+// Throw
+
+function sayMyName(name = "") {
+  if (name === "") {
+    throw "nome é obrigatório";
+  }
+  console.log("depois do erro");
+}
+
+// try ..... catch
+try {
+  sayMyName();
+} catch (e) {
+  console.log(e);
+}
+
+console.log("após a função");
+
+// Estrutura de Repetição
+// for
+
+for (let i = 0; i <= 100; i++) {
+  console.log(i);
+  if (i === 50) {
+    // pare de executar
+    break;
+  }
+}
+
+for (i = 100; i >= 0; i--) {
+  if (i === 50) {
+    //pule esse e continue
+    continue;
+  }
+  console.log(i);
+}
+// Estrutura de Repetição
+// While
+
+let i = 0;
+while (i < 10) {
+  console.log("Parabéns ", i);
+  i++;
+}
+// Estrutura de Repetição
+// for.....of
+
+let name = "wiris";
+let names = ["Joao", "Paulo", "Pedro"];
+
+for (let char of name) {
+  console.log(char);
+}
+
+for (let name of names) {
+  console.log(name);
+}
+// Estrutura de Repetição
+// for......in
+let person = {
+  name: "Jhon",
+  age: 30,
+  weight: 88.6,
+};
+
+for (let property in person) {
+  console.log(property);
+  console.log(person[property]);
+}
